@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.App {
+  background: linear-gradient(to bottom, #ff416c, #4a00e0);
+
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: montserrat, arial, verdana;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form-container {
+  border-radius: 8px;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form-container .header {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+  margin: 40px 40px 0px 40px;
+}
+
+.form-container .body {
+  flex: 60%;
+  margin-bottom: 60px;
+}
+
+.form-container .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.form-container .footer button {
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(96, 0, 252);
+  font-weight: bold;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
+}
+
+.sign-up-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container input {
+  margin: 5px;
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.sign-up-container input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.sign-up-container input::placeholder {
+  color: rgb(182, 182, 182);
+}
+
+.set-location-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.set-location-container input {
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.set-location-container input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.set-location-container input::placeholder {
+  color: rgb(182, 182, 182);
+}
+
+.image-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+}
+
+.image-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the container without stretching */
+  border-radius: 20px;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-text {
+  font-size: 1.2rem;
+}
+
+.upload-subtext {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+label {
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
